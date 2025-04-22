@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Efraín</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="estilos/styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero-section">
+      <img src="imagenes/mifoto.jpeg" alt="Foto de Efrain" class="profile-img">
+      <div class="hero-text">
+        <h1>Mi Portafolio</h1>
+        <p>Desarrollador Web | Electrónica | IA</p>
+        <div class="bio-container">
+          <p>Hola, soy Efraín. Me especializo en ofrecer soluciones digitales para empresas utilizando desarrollo web, robótica e IA.</p>
+          <p>Soy novato en desarrollo web, pero tengo muchas ganas de seguir creciendo 🚀.</p>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Homieeee00" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/_tracyy_9" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Lenguajes que manejo</h2>
+      <div class="skills-icons">
+        <div class="icon-card" title="HTML"><img src="imagenes/html.png" alt="HTML"></div>
+        <div class="icon-card" title="CSS"><img src="imagenes/CSS-.png" alt="CSS"></div>
+        <div class="icon-card" title="JavaScript"><img src="imagenes/JS.webp" alt="JavaScript"></div>
+        <div class="icon-card" title="Python"><img src="imagenes/python.jpg" alt="Python"></div>
+        <div class="icon-card" title="C++"><img src="imagenes/c++.png" alt="C++"></div>
+        <div class="icon-card" title="MySQL"><img src="imagenes/mysql.webp" alt="MySQL"></div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Habilidades Técnicas</h2>
+      <div class="habilidades-grid">
+        <div class="skill-card">
+          <img src="imagenes/POTENCIA.jpg" alt="Diagrama Eléctrico" class="skill-image">
+          <p>Conocimientos en manejo de diagramas eléctricos</p>
+        </div>
+        <div class="skill-card">
+          <img src="imagenes/electronica.jpg" alt="Diagrama Electrónico" class="skill-image">
+          <p>También manejo diagramas electrónicos</p>
+        </div>
+        <div class="skill-card">
+          <img src="imagenes/IA.png" alt="Curso de IA" class="skill-image">
+          <p>Actualmente en cursos de IA como potencIA</p>
+        </div>
+      </div>
+    </section>
+
+<!-- Proyectos -->
+<section class="projects">
+  <h2>Proyectos</h2>
+  <div class="projects-grid">
+    <!-- Proyecto 1 -->
+    <div class="project-card">
+      <img src="imagenes/kenito2.png" alt="Proyecto 1" class="project-img">
+      <h3>Página web - Kenito</h3>
+      <p>Fui parte de un equipo para realizar una página a una empresa de comida.</p>
+      <a href="#" class="view-more" onclick="openModal('modal1')">Ver más</a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="project-card">
+      <img src="imagenes/robot2.jpeg" alt="Proyecto 2" class="project-img">
+      <h3>Robot de pelea</h3>
+      <p>Realicé un robot de combate para torneos universitarios.</p>
+      <a href="#" class="view-more" onclick="openModal('modal2')">Ver más</a>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project-card">
+      <img src="imagenes/vision.jpeg" alt="Proyecto 3" class="project-img">
+      <h3>Visión artificial</h3>
+      <p>Realicé una mano robótica que se maneja a través de visión artificial.</p>
+      <a href="#" class="view-more" onclick="openModal('modal3')">Ver más</a>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="project-card">
+      <img src="imagenes/web.png" alt="Proyecto 4" class="project-img">
+      <h3>Páginas web</h3>
+      <p>He diseñado páginas para proyectos universitarios y próximamente una de ventas.</p>
+      <a href="#" class="view-more" onclick="openModal('modal4')">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modales -->
+<div id="modal1" class="project-modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+    <h2>Página web - Kenito</h2>
+    <img src="imagenes/kenito.png" class="modal-img" alt="Kenito">
+    <p>Este proyecto fue desarrollado en equipo para una empresa de comida rápida. Utilizamos HTML, CSS y JavaScript para una página intuitiva y moderna. Cabe recalcar que fue mi primer proyecto.</p>
+  </div>
+</div>
+
+<div id="modal2" class="project-modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+    <h2>Robot de pelea</h2>
+    <img src="imagenes/robot.jpeg" class="modal-img" alt="Robot de pelea">
+    <p>Un robot de combate diseñado para competencias universitarias. Utilizamos Arduino para el cerebro, soldamos, hice el código, las conexiones y la aplicación para manejarlo. En nuestro primer torneo nos robaron y nos descalificaron incoherentemente. Proximamente se viene otro torneo.</p>
+  </div>
+</div>
+
+<div id="modal3" class="project-modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+    <h2>Visión artificial</h2>
+    <img src="imagenes/vision.jpeg" class="modal-img" alt="Mano robótica">
+    <p>Una mano robótica que detecta los dedos levantados con visión artificial (MediaPipe + OpenCV en Python) y replica el movimiento con servomotores vía Arduino.</p>
+  </div>
+</div>
+
+<div id="modal4" class="project-modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+    <h2>Páginas web</h2>
+    <img src="imagenes/web.png" class="modal-img" alt="Diseños web">
+    <p>Diseñé páginas web para distintos proyectos académicos. Próximamente, una tienda online completa con carrito y panel de administración.</p>
+  </div>
+</div>
+
+
+<script>
+// Abre el modal con el ID correspondiente
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  const body = document.body;
+
+  if (modal) {
+    modal.classList.add('show'); 
+    body.style.overflow = 'hidden'; 
+    window.scrollTo(0, 0); 
+  }
+}
+
+// Cierra el modal con el ID correspondiente
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  const body = document.body; 
+
+  if (modal) {
+    modal.classList.remove('show'); 
+    body.style.overflow = ''; 
+  }
+}
+
+// Cerrar modal si se hace clic fuera del contenido del modal
+window.addEventListener("click", function(event) {
+  const modals = document.querySelectorAll(".project-modal");
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.classList.remove('show'); 
+      document.body.style.overflow = ''; 
+    }
+  });
+});
+
+</script>
+
+    <section class="section-block">
+      <h2>Califica mi portafolio</h2>
+      <select id="rating">
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+    </section>
+
+    <section class="section-block">
+      <h2>Contacto</h2>
+      <p>¿Quieres colaborar o tienes una consulta?</p>
+      <br><br>
+      <a href="mailto:efraing0719@gmail.com" class="contact-button">Escríbeme</a>
+    </section>
+
+    <!-- Modal de Proyecto -->
+    <div id="modal-kenito" class="project-modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-kenito')">&times;</span>
+        <h3>Más sobre el Proyecto Kenito</h3>
+        <p>Detalles adicionales sobre el proyecto Kenito.</p>
+      </div>
+    </div>
+
+
+  </main>
+</body>
+</html>
